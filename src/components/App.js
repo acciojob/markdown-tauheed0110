@@ -18,7 +18,7 @@ const App = () => {
       <textarea placeholder='type something here...' rows={41} value={value} onChange={(e)=>{handleChange(e)}}/>
       <div className='preview'>
         {
-            loading ? <p>Loading...</p> : <h1>{value}</h1>
+            loading ? <p>Loading...</p> : <h1><b>{value}</b></h1>
         }
       </div>
     </div>

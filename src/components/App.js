@@ -15,7 +15,7 @@ const App = () => {
     
   return (
     <div className='app'>
-      <textarea placeholder='type something here...' rows={41} value={value} onChange={(e)=>{handleChange(e)}}/>
+      <textarea className="textarea" placeholder='type something here...' rows={41} value={value} onChange={(e)=>{handleChange(e)}}/>
       <div className='preview'>
         {
             loading ? <h1>Loading...</h1> : <h1>{value}</h1>
